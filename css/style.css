@@ -1,0 +1,26 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Layout*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.title-wrapper{
+    font-size: 2em;
+}
