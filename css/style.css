@@ -16,14 +16,16 @@ body {
 }
 
 .menu{
+    font-size: 2em;
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
+    gap: 2.5em;
 }
 
 .title-wrapper{
-    font-size: 0.875em;
+    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
