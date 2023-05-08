@@ -34,13 +34,12 @@ body {
 
 .main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 2em;
 }
 
 .feature-blog{
     grid-column: 1 / -1;
-    object-fit: cover;
 }
 
 img{
@@ -49,6 +48,6 @@ img{
 
 .blog-posts{
     box-shadow: 0 0 1em rgba(0,0,0,.25);
-    padding: 1em;
+    padding: 2em;
     background: white;
 }
