@@ -15,7 +15,6 @@ body {
 }
 
 .menu{
-    font-size: 1.5em;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
