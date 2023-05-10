@@ -1,88 +1,97 @@
-/* *{
-    box-sizing: border-box;
-} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html, 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*Layout*/
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 3em;
-    margin-right: 3em;
+/* Navbar */
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
 }
 
-.menu{
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
+.navbar img {
+  height: 1.5em;
+  width: 1.5em;
 }
 
-.title-wrapper{
-    /* font-size: 1.2em; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.1em;
+.navbar p {
+  margin-right: auto;
+  font-weight: bold;
 }
 
-.main{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 2em;
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  padding-left: 0.8em;
 }
 
-.feature-blog{
-    height: 50vh;
-    background: url("../images/mac.jpg");
-    margin-bottom: 4em;
-    grid-column: 1/-1;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    color: white;
-    padding: 4em;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Main Component */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #fafafa;
 }
 
-.feature-blog h3, 
-.feature-blog p{
-    margin: 0 0 0 0;
+.feature-blog {
+  height: 300px;
+  width: auto;
+  background: url("../images/mac.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  grid-column: 1/-1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.feature-blog h1{
-    margin: 0 0 0.2em 0;
-    /* font-size: 3em; */
+.feature-blog-date {
+  font-size: 0.75em;
 }
 
-.feature-blog h3,
-.feature-blog h1, 
-.feature-blog p{
-    text-shadow: 2px 2px 2px black;
+.feature-blog-title {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
 }
 
-.feature-blog p{
-    max-width: 50vw;
-    line-height: 1.5em;
-    /* font-size: 1.1em; */
+.feature-blog-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-.blog-posts{
-    box-shadow: 0 0 1em rgba(0,0,0,.25);
-    padding: 2em;
-    background: white;
+.blog-post {
+  padding: 1em;
+}
+
+/* Media Queries */
+
+@media (min-width: 650px) {
+  .navbar {
+    padding: 0 2em;
+  }
+
+  .feature-blog-description{
+    width: 600px;
+  }
 }
