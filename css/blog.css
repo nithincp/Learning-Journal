@@ -37,16 +37,16 @@ body {
   display: grid;
   padding: 1em;
   gap: 1.5em;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9em;
+  grid-column: 1/-1;
 }
 
 .hero h1 {
   line-height: 108%;
+  padding: 0.5em 0;
 }
 
 .hero label {
@@ -56,10 +56,15 @@ body {
 .feature-img {
   width: 100%;
   border-radius: 3px;
+  padding-top: 0.5em;
 }
 
-.hero-post h3{
-    padding-bottom: 0.3em;
+.hero-post{
+    grid-column: 1/-1;
+}
+
+.hero-post h3 {
+  padding-bottom: 0.3em;
 }
 
 /* Footer */
@@ -85,13 +90,48 @@ body {
   line-height: 200%;
 }
 
+.blog-post {
+  padding: 1em;
+}
 
-@media (min-width:650px){
-    .navbar{
-        padding: 2em;
-    }
+.blog-post-img {
+  width: 100%;
+  height: 240px;
+  border-radius: 0.3em;
+  object-fit: cover;
+}
 
-    .main{
-        padding: 2em;
-    }
+.blog-post-title {
+  padding-bottom: 0.35em;
+}
+.blog-post-date {
+  font-size: 0.8em;
+  padding: 0.8em 0;
+}
+
+.blog-post-date {
+  display: block;
+}
+
+.blog-post-description {
+  color: #505050;
+}
+
+.recent-posts {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 1em;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (min-width: 650px) {
+  .navbar {
+    padding: 2em;
+  }
+
+  .main {
+    padding: 2em;
+  }
+
 }
