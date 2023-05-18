@@ -37,7 +37,7 @@ body {
   display: grid;
   padding: 1em;
   gap: 1.5em;
-  grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 
 .hero {
@@ -132,6 +132,7 @@ body {
 
   .main {
     padding: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
   }
 
 }

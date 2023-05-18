@@ -41,7 +41,7 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   background-color: #fafafa;
 }
 
@@ -87,7 +87,7 @@ body {
   object-fit: cover;
 }
 
-.blog-post-title{
+.blog-post-title {
   padding-bottom: 0.35em;
 }
 .blog-post-date {
@@ -113,7 +113,7 @@ body {
   padding: 2em 0;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -147,6 +147,10 @@ body {
     padding: 0 2em;
   }
 
+  .main {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
   .feature-blog-description {
     width: 500px;
   }
@@ -159,12 +163,11 @@ body {
     padding: 2em;
   }
 
-  .hidden{
+  .hidden {
     display: grid;
   }
 
-  .read-more{
+  .read-more {
     display: none;
   }
 }
-
